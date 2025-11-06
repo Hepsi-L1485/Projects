@@ -13,7 +13,7 @@ def login(username:int,password:int):
     print('=========================')
     # checking whether user entered correct details or not
     if username in accounts_table:
-        if password == accounts_table[username]:  # using key('username') to get value('password')
+        if password == accounts_table[username]: 
             print('*Login Successful*')
             return True
         else:
@@ -51,7 +51,7 @@ def deposit(account:int,deposit_amount:int):
         print('User not found')
 
 #transaction func
-def transac(sender_ac:int,receiver_ac:int, transfer_amount:int):    #sender_ac -> username
+def transac(sender_ac:int,receiver_ac:int, transfer_amount:int):    
     print('=========================')
     if sender_ac in users_table:
         receiver_ac = int(input('Enter receiver account number: '))
@@ -84,13 +84,11 @@ def logout():
     print('=========================')
     exit()
 
-
-# main  -> prgm starts here
 if __name__ == "__main__":
     print('\n \n **** Welcome to ABC Bank Application ***')
     username = int(input('Enter your account number: '))
     password = int(input('Enter your password: '))
-    login_val = login(username = username, password = password)  #login is func
+    login_val = login(username = username, password = password)  
     while login_val:
        operations = ("\n"
                      " 1.Withdraw \n",
@@ -100,10 +98,10 @@ if __name__ == "__main__":
                      "5.Balance Enquiry \n",
                      "6.Logout \n"
                      )
-       print(*operations)  # '*' removes the symbol
+       print(*operations)  
        choice = int(input('Select the operations: '))
        if choice == 1:
-           withdraw(account = username, withdraw_amount = int(input('Enter amount to withdraw: '))) #taking default-without amount as 0
+           withdraw(account = username, withdraw_amount = int(input('Enter amount to withdraw: '))) 
        elif choice == 2:
            deposit(account = username , deposit_amount = int(input('Enter amount to deposit: '))) 
        elif choice == 3 :
@@ -115,4 +113,5 @@ if __name__ == "__main__":
        elif choice == 6:
            logout()
        else:
+
            print('** Please select the operations in between 1 to 6.. **')
