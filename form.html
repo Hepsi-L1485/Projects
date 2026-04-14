@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action = "" method = "get">
+        <label for = "name">Full Name: </label>
+        <input type = "text" placeholder = "enter full name" id = "name">
+    <br><br>
+        <label>Email: </label>
+        <input type = "email" placeholder = "enter email">
+    <br><br>
+        <label>Password: </label>
+        <input type = "password">
+    <br><br>
+        <label>DOB</label>
+        <input type = "date">
+    <br><br>
+        <input type = "color">
+        <input type = "time">
+        <input type = "datetime-local">
+        <input type = "file">
+        <input type = "hidden" name = "secret" value = "it is a secret">
+        <input type = "range">
+        <input type = "submit">
+        <input type = "week">
+        <input type = "month">
+<br><br>
+        <label for = "m">Male</label>
+        <input type = "radio" name = "gen" id = 'm'>
+        <label for = "f">Female</label>
+        <input type = "radio" name = "gen" id = 'f'>
+
+
+<br>  <label for = "">Do you have any Backlogs</label>
+<br> <label for = "y">Yes</label>
+        <input type = "radio" name = "bk" id = "y">
+    <label for = "n">No</label>
+        <input type = "radio" name = "bk" id = "n">
+<br><br>
+<h3>What are the languages you know</h3>
+        <label for = "en">English</label>
+        <input type = "checkbox" name = "ans" id = "en">
+        <label for = "hi">Hindi</label>
+        <input type = "checkbox" name = "ans" id = "hi">
+        <label for = "tel">Telugu</label>
+        <input type = "checkbox" name = "ans" id = "tel">
+         <label for = "tam">Tamil</label>
+        <input type = "checkbox" name = "ans" id = "tam">
+<br><br>
+            <p>Select your Branch</p>
+
+            <select name = "branch">
+                <option value = "">Select</option>
+                <option value = "cse">CSE</option>
+                <option value = "it">IT</option>
+                <option value = "eee">EEE</option>
+                <option value = "ece">ECE</option>
+                <option value = "aiml">AIML</option>
+            </select>
+
+<br><br>
+            <p>Select your Age</p>
+
+            <select name = "age">
+                <optgroup label = "Below 23">
+                    <option value = "19">19</option>
+                    <option value = "20">20</option>
+                    <option value = "21">21</option>
+                </optgroup>
+                <optgroup label = "Above 25">
+                    <option value = "26">26</option>
+                    <option value = "30">30</option>
+                    <option value = "31">31</option>
+                </optgroup>
+
+<br><br>
+               
+        <button>submit</button> 
+    </form>
+</body>
+</html>
